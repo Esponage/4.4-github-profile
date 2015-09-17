@@ -1,2 +1,57 @@
 body {
-  background-color: red; }
+  margin-top: 0; }
+
+ul {
+  list-style: none;
+  margin-top: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.top-nav {
+  width: 100%;
+  background-color: whitesmoke;
+  margin-top: 0;
+  padding-top: 1%;
+  padding-bottom: 2.5%; }
+
+.top-nav-left-side-container {
+  margin-left: 5%; }
+
+.top-nav-left-side {
+  margin-bottom: 0%; }
+
+.top-nav-left-side li {
+  display: inline-block;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 1%; }
+
+.top-nav-right-side-container {
+  margin-right: 5%; }
+
+.top-nav-right-side {
+  margin-bottom: 0%; }
+
+.top-nav-right-side li {
+  display: inline-block;
+  float: right;
+  padding-right: 4%;
+  margin-top: 0; }
+
+.search-bar {
+  width: 375px; }
+
+.main-container {
+  margin-left: 8%;
+  margin-right: 8%; }
+
+.side-bar {
+  width: 20%;
+  height: 50%; }
+
+.user-photo {
+  background-image: image("../assets/day_i_got_bike.jpg");
+  height: 230px;
+  width: 232px; }
