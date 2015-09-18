@@ -49,9 +49,12 @@ a {
 
 .side-bar {
   width: 20%;
-  height: 50%; }
+  height: 50%;
+  margin-top: 3%; }
 
 .user-photo {
-  background-image: image("../assets/day_i_got_bike.jpg");
   height: 230px;
-  width: 232px; }
+  width: 232px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%; }

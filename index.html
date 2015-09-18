@@ -43,27 +43,48 @@
     </div>
   </nav>
 
-  <div class="main-container">
-    <div class="side-bar">
-      <ul>
-        <div class="user-photo"> </div>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+    <div class="main-container">
+      <div class="side-bar">
+        <ul>
+          <div class="user-photo js-user-photo"> </div>
+          <li class="js-name"></li>
+          <li class="js-user-name"></li>
+          <hr>
+          <li class="js-email"><i class="fa fa-envelope-o"></i></li>
+          <li class="js-date-joined"><i class="fa fa-clock-o"></i>Join Date</li>
           <div class="followers">
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li class="js-followers"></li>
+              <li class="js-starred"></li>
+              <li class="js-following"></li>
             </ul>
           </div>
+          <li>Organizations</li>
+          <li>organiziations pic</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="main-content">
+      <ul class="activity">
+        <li></li>
         <li></li>
         <li></li>
       </ul>
     </div>
-  </div>
+    <div class="repository-search">
+      <li></li>
+    </div>
 
+    <div class="repositories-container">
+      <ul class="repositories"></ul>
+    </div>
+
+
+    
+    <script id="js-sidebar" type="text/x-handlebars-template"></script>
+    <script id="js-main-content" type="text/x-handlebars-template"></script>
   <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
   <script src="scripts/main.js" charset="utf-8"></script>
 </body>
