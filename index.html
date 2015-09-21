@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Github Profile</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/octicons/octicons.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -36,55 +37,95 @@
 
     <div class="top-nav-right-side-container">
       <ul class="top-nav-right-side">
-        <li><i class="fa fa-caret-down"></i></li>
-        <li><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></li>
-        <li><i class="fa fa-bell"></i></li>
+        <li class="blue-hover nav-photo js-user-photo-2"></li>
+        <li class="blue-hover"><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></li>
+        <li class="blue-hover"><i class="fa fa-bell"></i></li>
       </ul>
     </div>
   </nav>
 
-    <div class="main-container">
-      <div class="side-bar">
-        <ul>
-          <div class="user-photo js-user-photo"> </div>
-          <li class="js-name"></li>
-          <li class="js-user-name"></li>
-          <hr>
-          <li class="js-email"><i class="fa fa-envelope-o"></i></li>
-          <li class="js-date-joined"><i class="fa fa-clock-o"></i>Join Date</li>
-          <div class="followers">
-            <ul>
-              <li class="js-followers"></li>
-              <li class="js-starred"></li>
-              <li class="js-following"></li>
-            </ul>
-          </div>
-          <li>Organizations</li>
-          <li>organiziations pic</li>
+  <div class="main-container">
+
+
+    <div class="side-bar">
+      <ul class="side-bar-ul">
+        <li class="user-photo js-user-photo"> </li>
+        <li class="name js-name"></li>
+        <li class="user-name js-user-name"></li>
+        <hr class="user-name-hr">
+        <a href="">
+          <li class="email js-email"></li>
+        </a>
+        <li class="date-joined js-date-joined"></li>
+        <hr class="user-name-hr">
+      </ul>
+      <div class="user-followers">
+        <ul class="followers-ul">
+          <li class="followers js-followers"></li>
+          <li class="starred js-starred"></li>
+          <li class="following js-following"></li>
+        </ul>
+      </div>
+
+      <div class="user-followers-text-container">
+        <ul class="user-followers-text">
+          <li class="followers-text">Followers</li>
+          <li class="starred-text">Starred</li>
+          <li class="following-text">Following</li>
+          <hr class="user-name-hr">
+
+        </ul>
+      </div>
+      <div class="organizations-container">
+        <ul class="organizations-ul">
+          <li class="organizations-text">Organizations</li>
+          <li class="organizations-pic">
+            <img src="https://avatars0.githubusercontent.com/u/13643949?v=3&s=84">
+          </li>
         </ul>
       </div>
     </div>
 
 
-    <div class="main-content">
-      <ul class="activity">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-    <div class="repository-search">
-      <li></li>
-    </div>
+    <div class="main-content-container">
+      <div class="contributions-container">
+        <ul class="contributions-list">
+          <li class="cont-li-1">Contributions</li>
+          <li class="cont-li-2">
+            <span class="octicon octicon-repo"></span>Repositories</li>
+          <li class="cont-li-3">Public Activity</li>
+          <button>Edit Profile</button>
+          <hr class="cont-hr">
+        </ul>
+      </div>
 
-    <div class="repositories-container">
-      <ul class="repositories"></ul>
+      <div class="repo-nav-container">
+        <ul class="repo-nav-list">
+          <form>
+            <input type="text" placeholder="Find a repository...">
+            <input type="button" value="Search">
+          </form>
+          <li class="repo-nav-list-item-1 brand-color"><a href="">All </a> </li>
+          <li class="repo-nav-list-item-2 brand-color"><a href="">Public </a> </li>
+          <li class="repo-nav-list-item-3 brand-color"><a href="">Private </a> </li>
+          <li class="repo-nav-list-item-4 brand-color"><a href="">Sources </a> </li>
+          <li class="repo-nav-list-item-5 brand-color"><a href="">Forks </a> </li>
+          <li class="repo-nav-list-item-6 brand-color"><a href="">Mirrors </a> </li>
+          <button class="new-repo-button">New</button>
+        </ul>
+      </div>
+
+      <div class="repositories-container">
+        <ul class="repositories">
+        </ul>
+      </div>
+
     </div>
+  </div>
 
 
-    
-    <script id="js-sidebar" type="text/x-handlebars-template"></script>
-    <script id="js-main-content" type="text/x-handlebars-template"></script>
+  <script src="bower_components/moment/moment.js" charset="utf-8"></script>
+  <script src="bower_components/handlebars/handlebars.js" charset="utf-8"></script>
   <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
   <script src="scripts/main.js" charset="utf-8"></script>
 </body>
