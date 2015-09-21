@@ -3,7 +3,7 @@ $(document).ready(function() {
       url: "https://api.github.com/users/esponage/repos",
       method: "GET",
       dataType: "json",
-      headers: { "Authorization": "token 58734ea7b7318b9a258a4b86ea14c7c0f291f75c" }
+      headers: { "Authorization": "token ebeffd25d1c1b043e30ad7e4bd6cf482cbea3388" }
   })
   .then(function(response) {
         console.log(response);
@@ -15,7 +15,7 @@ $(document).ready(function() {
         $(".repositories").append('<li class="last-updated js-last-updated">' + (moment(repo.updated_at).startOf('hour').fromNow()) + '</li>');
 
       });
-});                                                                       
+});
     });
 
   $(document).ready(function() {
@@ -23,7 +23,7 @@ $(document).ready(function() {
       url: "https://api.github.com/users/esponage/starred",
       type: "GET",
       dataType: "json",
-      headers: { "Authorization": "token 58734ea7b7318b9a258a4b86ea14c7c0f291f75c" }
+      headers: { "Authorization": "token ebeffd25d1c1b043e30ad7e4bd6cf482cbea3388" }
     })
      .then(function(response) {
       console.log(response.length);
@@ -36,7 +36,7 @@ $(document).ready(function() {
         url: "https://api.github.com/users/esponage",
         method: "GET",
         dataType: "json",
-        headers: { "Authorization": "token 58734ea7b7318b9a258a4b86ea14c7c0f291f75c" }
+        headers: { "Authorization": "token ebeffd25d1c1b043e30ad7e4bd6cf482cbea3388" }
       }).then(function(response) {
           console.log(response);
           $(".js-user-photo").html('<img src=" '  + response.avatar_url + ' "/> ');
@@ -55,7 +55,7 @@ $(document).ready(function() {
           url: "https://api.github.com/users/esponage/orgs",
           type: "GET",
           dataType: "json",
-          headers: { "Authorization": "token 58734ea7b7318b9a258a4b86ea14c7c0f291f75c" }
+          headers: { "Authorization": "token ebeffd25d1c1b043e30ad7e4bd6cf482cbea3388" }
       })
       .then(function(response) {
             console.log(response);
